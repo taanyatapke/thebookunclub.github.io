@@ -8,13 +8,13 @@
   <style>
     /* ── TOKENS ────────────────────────────────────────────── */
     :root {
-      --blue:   #7bb8e0;
-      --blue-lt:#c8e4f5;
-      --yellow: #ffe815;
-      --pink:   #f50c92;
-      --pink-lt:#ffd6ef;
-      --ink:    #1a1a2e;
-      --cream:  #fffdf5;
+      --blue:   #A7C7E7;
+      --blue-lt:#EAF4FD;
+      --yellow: #FFE815;
+      --yellow-lt: #FFF8CC;
+      --pink:   #F50C92;
+      --pink-lt:#FFE3F2;
+      --cream:  #FFFDF7;
       --paper:  #fef9ec;
       --radius: 18px;
     }
@@ -31,7 +31,7 @@
       position: fixed; top: 0; width: 100%; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
       padding: 0 5vw; height: 64px;
-      background: var(--ink);
+      background: var(--paper);
       border-bottom: 2px solid var(--yellow);
     }
     .nav-logo {
@@ -91,7 +91,7 @@
       font-family: 'Playfair Display', serif;
       font-size: clamp(2.6rem, 5vw, 4.2rem);
       font-weight: 900; line-height: 1.08;
-      color: #fff; margin-bottom: 1.4rem;
+      color: #000; margin-bottom: 1.4rem;
     }
     .hero-headline em {
       font-style: italic; color: var(--pink);
@@ -201,7 +201,7 @@
     /* ── LINKS HUB ──────────────────────────────────────────── */
     #links {
       padding: 100px 5vw;
-      background: var(--ink); color: #fff;
+      background: var(--paper); color: #fff;
     }
     #links .section-eyebrow { color: var(--yellow); }
     #links .section-title { color: #fff; }
@@ -345,7 +345,7 @@
 
     /* ── FOOTER ──────────────────────────────────────────────── */
     footer {
-      background: var(--ink); color: #8a9ab8;
+      background: var(--paper); color: #8a9ab8;
       padding: 3rem 5vw;
       display: flex; justify-content: space-between; align-items: center;
       flex-wrap: wrap; gap: 1.5rem;
