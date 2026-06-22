@@ -114,7 +114,7 @@
     }
     .hero-headline .highlight {
       background: var(--yellow); color: var(--ink);
-      font-style: normal; padding: 0.25em 0.2em;
+      font-style: normal; padding: 0.1em 0.1em;
     }
     .hero-sub {
       font-size: 1.05rem; line-height: 1.7;
@@ -371,7 +371,18 @@
       font-family: 'Playfair Display', serif;
       font-size: 1.2rem; font-weight: 900; color: var(--yellow);
     }
-    .footer-logo span { color: var(--pink); font-style: italic; }
+    .footer-logo .book-text {
+      color: #232323;
+    }
+
+    .footer-logo .un-text {
+      color: var(--pink);
+      font-style: italic;
+    }
+
+    .footer-logo .club-text {
+      color: var(--yellow);
+    }
     footer p { font-size: 0.82rem; }
     .footer-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
     .footer-links a {
@@ -678,7 +689,11 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">The Book <span>Un</span> Club</div>
+  <div class="footer-logo">
+  <span class="book-text">The Book </span>
+  <span class="un-text">Un</span>
+  <span class="club-text"> Club</span>
+  </div>
   <p>Made with 📚 and too much coffee.</p>
   <div class="footer-links">
     <a href="YOUR_SUBSTACK_LINK">Substack</a>
