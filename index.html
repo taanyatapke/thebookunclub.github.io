@@ -32,15 +32,30 @@
       position: fixed; top: 0; width: 100%; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
       padding: 0 5vw; height: 64px;
-      background: var(--blue-lt);
+      background: var(--blue);
       border-bottom: 2px solid var(--yellow);
     }
+    
     .nav-logo {
       font-family: 'Playfair Display', serif;
-      font-size: 1.15rem; font-weight: 900;
-      color: var(--yellow); letter-spacing: -0.01em;
+      font-size: 1.15rem;
+      font-weight: 900;
+      letter-spacing: -0.01em;
     }
-    .nav-logo span { color: var(--pink); font-style: italic; }
+  
+    .book-text {
+      color: #232323;
+    }
+  
+    .un-text {
+      color: var(--pink);
+      font-style: italic;
+    }
+  
+    .club-text {
+      color: var(--yellow);
+    }
+
     .nav-links {
       display: flex; gap: 2rem; list-style: none;
     }
@@ -381,7 +396,11 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">The Book <span>Un</span> Club</div>
+  <div class="nav-logo">
+  <span class="book-text">The Book </span>
+  <span class="un-text">Un</span>
+  <span class="club-text"> Club</span>
+  </div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#links">Our Links</a></li>
